@@ -1,4 +1,4 @@
-const CACHE = 'volt-brawl-1.1.0+e846edd'
+const CACHE = 'volt-brawl-1.2.0+9243179'
 
 self.addEventListener('install', () => {
   /* The Update button calls skipWaiting once the player asks for the new build. */
