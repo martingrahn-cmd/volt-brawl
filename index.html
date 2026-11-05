@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#1b1230" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Volt Brawl" />
+    <title>Volt Brawl</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" sizes="180x180" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="./assets/index-BwQEuE_1.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DIStDhyo.css">
+  </head>
+  <body>
+    <button id="btn-update" type="button" hidden>Update</button>
+    <canvas id="view"></canvas>
+    <div id="vignette"></div>
+    <div id="flash"></div>
+    <div id="fade"></div>
+    <div id="floaters"></div>
+    <div id="hud">
+      <div id="mission-readout">
+        <strong id="objective">Pick a gate</strong>
+        <span id="objective-sub">Walk into a colored arch</span>
+      </div>
+      <div class="top">
+        <div class="chip" id="zone-chip">Plaza</div>
+        <div class="top-side">
+          <div class="chip" id="stars-chip">★ 0/9</div>
+          <span id="build-tag"></span>
+        </div>
+      </div>
+      <div id="bossbar" hidden>
+        <span id="boss-name">Warden</span>
+        <div class="track"><div id="boss-fill"></div></div>
+      </div>
+      <div id="banner"></div>
+      <button id="prompt" type="button" hidden>Enter</button>
+      <div class="bottom">
+        <div class="meters">
+          <div class="meter hp">
+            <span>HP</span>
+            <div class="track"><div id="hp-fill"></div></div>
+            <em id="hp-num">100</em>
+          </div>
+          <div class="meter super">
+            <span>Super</span>
+            <div class="track"><div id="super-fill"></div></div>
+            <em id="super-label">0</em>
+          </div>
+        </div>
+        <div class="hud-actions">
+          <button id="btn-mute" type="button">Sound</button>
+          <button id="btn-pause" type="button">Pause</button>
+        </div>
+      </div>
+      <p id="hint"></p>
+    </div>
+    <div id="touch">
+      <div class="stick" id="stick-l"><div class="knob"></div></div>
+      <div class="stick" id="stick-r"><div class="knob"></div></div>
+      <button id="btn-dodge" type="button">Dodge</button>
+      <button id="btn-super" type="button">Super</button>
+      <button id="btn-enter" type="button" hidden>Enter</button>
+    </div>
+    <div id="overlay">
+      <div class="card" id="card">
+        <p class="eyebrow">Volt Brawl</p>
+        <h1>Warming the plaza…</h1>
+        <div class="load"><div id="loadbar"></div></div>
+        <p class="fine" id="loadnote">Pulling in bushes, gates, and one brawler.</p>
+      </div>
+    </div>
+  </body>
+</html>
